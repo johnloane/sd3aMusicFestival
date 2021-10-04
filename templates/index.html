@@ -5,10 +5,9 @@
     <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
     <select name="musicfestival">
         <option disabled selected value="">Music Festival</option>
-        <option value="electricpicnic">Electric Picnic</option>
-        <option value="longitude">Longitude</option>
-        <option value="tomorrowland">Tomorrowland</option>
-        <option value="reading">Reading</option>
+        {% for festival in festivals %}
+        <option value = {{festival}}>{{festival}}</option>
+        {% endfor %}
     </select>
     <input type="submit" value="Register">
 </form>
