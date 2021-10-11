@@ -10,10 +10,10 @@
     </tr>
     </thead>
     <tbody>
-    {% for name, festival in registrants.items() %}
+    {% for registrant in registrants %}
     <tr>
-        <td>{{name}}</td>
-        <td>{{festival}}</td>
+        <td>{{registrant[0]}}</td>
+        <td>{{registrant[1]}}</td>
     </tr>
     {% endfor %}
     </tbody>
